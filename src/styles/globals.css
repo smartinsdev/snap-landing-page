@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-screen max-w-7xl mx-auto bg-almost-white font-epilogue font-medium text-lg;
+  }
+}
+
+@layer components {
+  .menu-hamburger-line {
+    @apply h-1 w-6 my-[2px] rounded-full bg-almost-black;
+  }
+
+  .nav-item {
+    @apply px-4 py-2 text-medium-gray transition-colors duration-300;
+  }
+
+  .nav-item:hover {
+    @apply text-almost-black;
+  }
+
+  .item-dropdown {
+    @apply flex items-center justify-center;
+  }
+}
