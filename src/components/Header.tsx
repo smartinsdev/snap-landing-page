@@ -70,7 +70,40 @@ export const Header = () => {
         <ButtonMenuHamburger />
       </header>
       <SideBar>
-        <p>menu</p>
+        <div className="w-full flex flex-col items-start space-y-2 text-base">
+          <button className="nav-item flex items-center">
+            Features
+            <img
+              src="/images/icon-arrow-up.svg"
+              alt="icon"
+              className="max-w-full block ml-4"
+            />
+          </button>
+          <button className="nav-item flex items-center">
+            Company
+            <img
+              src="/images/icon-arrow-up.svg"
+              alt="icon"
+              className="max-w-full block ml-4"
+            />
+          </button>
+          <Link href="#">
+            <a className="nav-item">Careers</a>
+          </Link>
+          <Link href="#">
+            <a className="nav-item">About</a>
+          </Link>
+        </div>
+        <div className="flex flex-col items-center text-center space-y-2 mt-6 text-base w-full">
+          <Link href="#">
+            <a className="nav-item w-full">Login</a>
+          </Link>
+          <Link href="#">
+            <a className="nav-item w-full border border-medium-gray rounded-lg hover:border-almost-black">
+              Register
+            </a>
+          </Link>
+        </div>
       </SideBar>
     </>
   );

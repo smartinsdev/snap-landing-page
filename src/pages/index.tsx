@@ -1,12 +1,24 @@
-import type { NextPage } from "next";
+import { useContext, useEffect } from "react";
 import Head from "next/head";
+import type { NextPage } from "next";
+
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
-import { OpenMenuProvider } from "../providers/OpenMenuProvider";
+import { OpenMenuContext } from "../contexts/OpenMenuContext";
+import { Overlay } from "../components/Overlay";
 
 const Home: NextPage = () => {
+  const context = useContext(OpenMenuContext);
+
+  useEffect(() => {
+    if (context?.isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [context?.isOpen]);
   return (
-    <OpenMenuProvider>
+    <>
       <Head>
         <title>Frontend Mentor | Intro section with dropdown navigation</title>
         <meta
@@ -15,8 +27,9 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header />
+      {context?.isOpen && <Overlay />}
       <Hero />
-    </OpenMenuProvider>
+    </>
   );
 };
 

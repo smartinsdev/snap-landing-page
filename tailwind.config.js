@@ -28,13 +28,9 @@ module.exports = {
         "enter-orvelay-menu": {
           "from": {
             opacity: 0,
-            visibility: "hidden",
-            transform: "translateX(100%)"
           },
           "to": {
             opacity: 1,
-            visibility: "visible",
-            transform: "translateX(0)"
           }
         },
       },
