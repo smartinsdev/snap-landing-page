@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,10 +5,7 @@ import { ButtonMenuHamburger } from "./ButtonMenuHambuger";
 import { NavItemDropdown } from "./NavItemDropdown";
 import { SideBar } from "./SideBar";
 
-type Props = {};
-
-export const Header = (props: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
+export const Header = () => {
   const itemsFetures = [
     {
       name: "Todo List",
@@ -71,12 +67,9 @@ export const Header = (props: Props) => {
             </a>
           </Link>
         </div>
-        <ButtonMenuHamburger
-          isOpen={isOpen}
-          handleClick={() => setIsOpen(!isOpen)}
-        />
+        <ButtonMenuHamburger />
       </header>
-      <SideBar isOpen={isOpen}>
+      <SideBar>
         <p>menu</p>
       </SideBar>
     </>
