@@ -36,10 +36,10 @@ Users should be able to:
 Get the code by either cloning this repository using git
 
 ```
-git clone https://github.com/smartinsdev/advice-generator-app.git
+git clone https://github.com/smartinsdev/snap-landing-page.git
 ```
 
-... or [downloading source code](https://github.com/smartinsdev/advice-generator-app/archive/refs/heads/main.zip) code as a zip archive.
+... or [downloading source code](https://github.com/smartinsdev/snap-landing-page/archive/refs/heads/main.zip) code as a zip archive.
 
 Once downloaded, open the terminal in the project directory, and install dependencies with:
 
