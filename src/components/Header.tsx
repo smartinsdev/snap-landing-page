@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AccordinItem } from "./AccordinItem";
 
 import { ButtonMenuHamburger } from "./ButtonMenuHambuger";
 import { NavItemDropdown } from "./NavItemDropdown";
@@ -71,22 +72,8 @@ export const Header = () => {
       </header>
       <SideBar>
         <div className="w-full flex flex-col items-start space-y-2 text-base">
-          <button className="nav-item flex items-center">
-            Features
-            <img
-              src="/images/icon-arrow-up.svg"
-              alt="icon"
-              className="max-w-full block ml-4"
-            />
-          </button>
-          <button className="nav-item flex items-center">
-            Company
-            <img
-              src="/images/icon-arrow-up.svg"
-              alt="icon"
-              className="max-w-full block ml-4"
-            />
-          </button>
+          <AccordinItem name="Features" items={itemsFetures} />
+          <AccordinItem name="Company" items={itemsCompany} />
           <Link href="#">
             <a className="nav-item">Careers</a>
           </Link>
@@ -94,7 +81,7 @@ export const Header = () => {
             <a className="nav-item">About</a>
           </Link>
         </div>
-        <div className="flex flex-col items-center text-center space-y-2 mt-6 text-base w-full">
+        <div className="flex flex-col items-center text-center space-y-2 mt-6 text-base w-full mb-2">
           <Link href="#">
             <a className="nav-item w-full">Login</a>
           </Link>

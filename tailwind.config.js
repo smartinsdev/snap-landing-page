@@ -33,10 +33,19 @@ module.exports = {
             opacity: 1,
           }
         },
+        "enter-accordion-menu": {
+          "from": {
+            opacity: 0
+          },
+          "to": {
+            opacity: 1
+          }
+        }
       },
       animation: {
         "enter-dropdown": "enter-dropdown .3s ease-out",
         "enter-orvelay-menu": "enter-orvelay-menu .2s ease-in",
+        "enter-accordion-menu": "enter-accordion-menu .8s ease-out"
       },
       maxWidth: {
         "readable": "45ch"
