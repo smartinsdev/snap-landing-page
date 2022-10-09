@@ -57,8 +57,8 @@ The app should now be up and running at http://localhost:3000 🚀
 
 ### Links
 
-- Solution URL: [here]()
-- Live Site URL: [here]()
+- Solution URL: [here](https://www.frontendmentor.io/solutions/snap-landing-page--o0ABWDpkK)
+- Live Site URL: [here](https://snap-smartinsdev.vercel.app/)
 
 ## My process
 
